@@ -1,0 +1,33 @@
+<要件>
+①PC0から以下の宛先にpingが通る。
+
+　・PC1
+　・ブロードキャストアドレス
+ 
+②STPに対応しているVLANを10に変更する。
+
+<現状>
+PC0からPC1へpingは通る。
+ブロードキャストも通る。
+Vlanはデフォのみ。
+STPがvlan1で有効。
+
+⇨通信可能でSTPも設定されている
+　
+
+<作業>
+vlan1のSTPを無効化 ○
+vlan1のEther Channelを有効か ●
+vlan10を作成　　●
+vlan10のSTPを有効化
+
+
+Memo
+Vlan10をFの2、Gの4つで作成。うち2つはvlan1も通す。    Vlan1はいらない。gigaをaccessに変更
+ここでpingが通るか確認。
+vlan10のSTPを設定。showで確認
+Fの２つをvlan1に戻す。
+Pingが通るか確認
+
+
+Vlan1のネットワークをvlan10にした
