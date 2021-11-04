@@ -7,4 +7,4 @@
 　　　インターフェースID：9a 76 54 ff fe 32 10 fe
 
 （３）MACアドレス：FFFF.FFFF.FFFF
-　　　インターフェースID：ff ff ff ff fe ff ff ff
+　　　インターフェースID：fd ff ff ff fe ff ff ff
